@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+<title>Westerdals</title>
+    
+</head>
+    
+<body>
+    
+<div class="bakgrunn">
+   <img class="slideshow" src="Westerdals.jpg">
+    
+    
+   <img class="slideshow" src="12992738_10156864448095085_469207469_n-960x720.jpg">
+    
+   <img class="slideshow" src="Fasade-fra-gaten.jpg">
+    
+   <img class="slideshow" src="N4A1603-800x600.jpg">
+</div>
+    
+    <script>
+    
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}    
+    
+</script>
+
+<div>
+<img id="logo" src="westerdals-logo1.png">
+<h5 id = "Navn">Westerdals Oslo ACT</h5>
+
+<a id="kontakt" href="https://www.westerdals.no/kontakt/">Kontakt oss</a>
+</div>
+
+</body>
+</html>
