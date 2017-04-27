@@ -55,54 +55,6 @@ function carousel() {
 <a id="kontakt" href="https://www.westerdals.no/kontakt/">Kontakt oss</a>
 </div>
 
-<?php
-
-$port = 3306;
-
-$username = 'root';
-    
-$passord = 'root';
-    
-$name = 'ølpriser';
-
-$connection = new PDO("mysql:host=localhost;dbname={$name};port={$port}", $username, $passord);
-
-$statment = $connection->prepare('SELECT * FROM øl');
-
-$statment->execute();
-
-while($row = $statment->fetch(PDO::FETCH_ASSOC)) {
-  $øl[] = $row;
-}
-
-echo '<pre>';
-print_r($row);
-die();
-  
-?> 
-<main class ="main">
-
-<div class="grid">
-
-<?php foreach ($øl as $øl) { ?>
-
-<div>
-
-<img src"" height="200">
-
-<div>
-
-  <h2><?= $øl['Id_Navn'] ?></h2>
-
-  </div>
-
-  <div class ="Åpningstider M"><?= $øl['Åpningstider_Mandag'] ?></div>
-
-</div>
-
-<?php } ?>
-
-</div>
 
 </main>
 
