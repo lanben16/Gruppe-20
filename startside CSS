@@ -1,0 +1,97 @@
+body {
+    
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover;   
+} 
+
+.bakgrunn {
+    color:black;
+    height: 645px;
+    width: 1340px; 
+    position: relative;
+}
+
+.meny {
+    position: absolute;
+    top:10px;
+    height: 20px;
+    width:100%;
+    
+}
+
+#Fjerdingen {
+    position: absolute;
+    left: 510px;
+    background-color: aliceblue;
+}
+
+#Vulkan {
+    position: absolute;
+    left: 620px;
+    background-color: aliceblue;
+}
+
+#Brenneriveien {
+    position: absolute;
+    left: 700px;
+    background-color: aliceblue;
+}
+
+.slideshow {
+    display:none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position:relative;
+    
+}
+
+.grid {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    color: black;
+}
+
+#logo {
+        bottom: 60px;
+        left: 40px;
+        padding:0px;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        position: fixed;
+}
+
+#Navn {
+        bottom:10px;
+        left:30px;
+        position: fixed;
+        color: whitesmoke;
+}
+
+#kontakt {
+        bottom:15px;
+        left:50px;
+        position: fixed;
+        color: whitesmoke;
+        text-decoration: none;
+}
+
+#nySide {
+        bottom: 15px;
+        right: 50px;
+        position:fixed;
+        color:whitesmoke;
+        border-color: black;
+}
+#Tilbake {
+        top:10px;
+        left:10px;
+        position:fixed;
+        color:whitesmoke;
+
+}
