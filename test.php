@@ -1,6 +1,9 @@
 
+  
 <!DOCTYPE html>
+
 <html>
+
 <head>
     
 
@@ -12,42 +15,44 @@
 <link rel="stylesheet" type="text/css" href="test.css">
 
     
-<title>Westerdals</title>
+<title>Westerdals new</title>
     
 </head>
     
 <body>
 <a id="Tilbake" href="index.html">Tilbake</a>
 
+
 <?php
 
-$port = "3306";
-$username = "root";
-$password = "root";
-$dbname = "barer";
+$port = 3306;
+
+$username = 'lanben16_gr20';
+
+$password = 'Ntcrvy&6])8k';
+
+$name = 'lanben16_Barer';
 
 // Create connection
-$conn = new mysqli($port, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
-} 
+$connection = new PDO("mysql:host=tek.westerdals.no;dbname={$name};port={$port}", $username, $password);
 
-$sql = "SELECT Id_Navn, Adresse, Pris FROM info";
-$result = $conn->query($sql);
+$statement = $connection->prepare('SELECT * FROM barer');
+$statement->execute();
 
-if ($result->num_rows > 0) {
-     // output data of each row
-     while($row = $result->fetch_assoc()) {
-         echo "<br> Navn: ". $row["Id_Navn"]. " - Adresse: ". $row["Adresse"]. " - Pris:  " . $row["Pris"] . "<br>";
-     }
-} else {
-     echo "0 results";
+$barer = [];
+
+while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+	$barer[] = $row;
 }
 
-$conn->close();
-?>  
 
+echo '<pre>';
+print_r($barer);
+
+
+die();
+
+?>
 
 </body>
 </html>
