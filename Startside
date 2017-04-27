@@ -17,6 +17,8 @@
 </head>
     
 <body>
+    
+
 
 <div class="bakgrunn">
    <img class="slideshow" src="Westerdals.jpg">
@@ -28,6 +30,15 @@
     
    <img class="slideshow" src="N4A1603-800x600.jpg">
 </div>
+    
+    <div class="meny">
+    
+    <a id="Fjerdingen" href="test.php">Fjerdingen</a>
+    <a id="Vulkan" href="test.php">Vulkan</a>
+    <a id="Brenneriveien" href="test.php">Brenneriveien</a>
+    
+    
+    </div>
     
     <script>
     
@@ -47,17 +58,15 @@ function carousel() {
 }    
     
 </script>
+    
 
 <div>
 <img id="logo" src="westerdals-logo1.png">
 <h5 id = "Navn">Westerdals Oslo ACT</h5>
 
 <a id="kontakt" href="https://www.westerdals.no/kontakt/">Kontakt oss</a>
+<a id="nySide" href="test.php">Neste side</a>
 </div>
-
-
-</main>
-
 
 </body>
 </html>
