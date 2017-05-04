@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="barer.css" rel="stylesheet" type="text/css">
+<title>New HMTL document by NewJect</title>
+
+</head>
+    
+<body>
+
+<div id="myBtn"> 
+    <img class="thumbnailImg" src="https://www.scandichotels.com/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg">
+    <p class="thumbnailName">BarName</p>
+    
+</div>
+
+<div id ="myModal" class="modal">
+    <div class="modalContent">
+        
+        
+        <img class="barImg" src="https://www.scandichotels.com/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg">
+        <div class="close">&times;</div>
+        
+            <p class="barName">Barname</p>
+            <ul class="barInfo">
+                <li>Adresse:</li>
+                <li>Ølpris:</li>
+                <li>ID:</li>
+                <li>Åpningtider:</li>
+            </ul>
+            
+        
+    </div>
+    </div>
+    
+  
+</div>    
+
+    <script>
+        var modal = document.getElementById('myModal');
+
+
+        var btn = document.getElementById("myBtn");
+
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}  
+    </script>
+    
+    
+</body>
+</html>
