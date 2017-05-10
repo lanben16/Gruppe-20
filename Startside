@@ -31,14 +31,32 @@
    <img class="slideshow" src="N4A1603-800x600.jpg">
 </div>
     
-    <div class="meny">
+    
+    
+    
+    <div id="HjemMeny">
+    <h2 id="Westerdals">Westerdals</h2>
+    <p id="ACT">Oslo school of Arts Communication and Technology</p>
+    </div>
+    <div id="CampusMeny">
+    <p id="Campuser">Campuser</p>
+    <div class="menyFjerdingen">
     
     <a id="Fjerdingen" href="test.php">Fjerdingen</a>
-    <a id="Vulkan" href="test.php">Vulkan</a>
-    <a id="Brenneriveien" href="test.php">Brenneriveien</a>
-    
-    
     </div>
+    
+    <div class="menyVulkan">
+    <a id="Vulkan" href="test.php">Vulkan</a>  
+    </div>
+    
+    <div class="menyBrenneriveien">
+    <a id="Brenneriveien" href="test.php">Brenneriveien</a>
+    </div>
+        </div>
+    
+    <div id="Blokk"></div>
+    
+    
     
     <script>
     
@@ -58,14 +76,20 @@ function carousel() {
 }    
     
 </script>
-    
+<div id="Vegg1"></div>
+<div id="Vegg2"></div>
+<div id="Vegg3"></div>
+<div id="Vegg4"></div>
 
 <div>
 <img id="logo" src="westerdals-logo1.png">
-<h5 id = "Navn">Westerdals Oslo ACT</h5>
+
+
 
 <a id="kontakt" href="https://www.westerdals.no/kontakt/">Kontakt oss</a>
-<a id="nySide" href="test.php">Neste side</a>
+<a id="OmH" href="barer.php">Om Høyskolen</a>
+<a id="Bachelor" href="barer.php">Bachelor studier</a>
+<a id="Master" href="barer.php">Master studier</a>
 </div>
 
 </body>
