@@ -1,6 +1,6 @@
 body {
     
-    background-color: black;
+    background-color: darkslategray;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size:cover;
@@ -9,42 +9,121 @@ body {
 
 .bakgrunn {
     color:black;
+    border-radius: 10px;
     height: 645px;
     width: 1340px; 
     position: relative;
 }
 
-.meny {
+#HjemMeny {
     position: absolute;
-    top:10px;
-    height: 20px;
-    width:100%;
-    
+    top:0px;
+    left:0px;
+    font-size: 40px;
+    width: 1350px;
+    height: 130px;
+    box-shadow: 7px 4px black;
+    background-color: dimgray;
+    border-bottom-color: black;
+    border-top-right-radius: 10px;
 }
+
+#Westerdals {
+    position: absolute;
+    left: 540px;
+    top: -60px;
+    font-family: sans-serif;
+    font-size: 70px;
+    text-shadow: 2px 2px white;
+}
+
+#ACT {
+    position: absolute;
+    left: 430px;
+    font-family: sans-serif;
+    top: 65px;
+    font-size: 25px;
+}
+
+
+#CampusMeny {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    height: 500px;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+}
+
+#Campuser {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 40px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    text-shadow: 3px 2px black;
+}
+
+
+#Vegg4 {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    height: 504px;
+    width: 7px;
+    background-color: black;
+}
+
+
 
 #Fjerdingen {
     position: absolute;
-    left: 510px;
-    background-color: aliceblue;
+    top: 150px;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: sans-serif;
+    text-shadow: 3px 2px black;
+    
 }
 
 #Vulkan {
     position: absolute;
-    left: 620px;
-    background-color: aliceblue;
+    top: 230px;
+    left:20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: sans-serif;
+    text-shadow: 3px 2px black;
+    
 }
 
 #Brenneriveien {
     position: absolute;
-    left: 700px;
-    background-color: aliceblue;
+    top: 300px;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: sans-serif;
+    text-shadow: 3px 2px black;
+    
 }
+
 
 .slideshow {
     display:none;
-    height: 100%;
-    width: 100%;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 6px black;
+    top: 120px;
+    left: -7px;
+    height: 500px;
+    width: 1349px;
     object-fit: cover;
+    overflow: hidden;
     position:relative;
     
 }
@@ -56,37 +135,85 @@ body {
     color: black;
 }
 
+ #Fjerdingen:hover, #Vulkan:hover, #Brenneriveien:hover {
+    
+    text-shadow: 7px 7px gray;
+}
+
+#OmH:hover, #Bachelor:hover, #Master:hover {
+    color: black;
+}
+
 #logo {
-        bottom: 60px;
+        top: 0px;
         left: 40px;
         padding:0px;
         height: 100px;
         width: 100px;
+        box-shadow: 2px 2px black;
         border-radius: 100px;
-        position: fixed;
+        position: absolute;
 }
 
-#Navn {
-        bottom:10px;
-        left:30px;
-        position: fixed;
-        color: whitesmoke;
+#Blokk {
+        position: absolute;
+        top: 0px;
+        left: 201px;
+        height: 133px;
+        width: 3px;
+        background-color: black;
+        overflow: hidden;
 }
+
+
 
 #kontakt {
-        bottom:15px;
-        left:50px;
+        top:105px;
+        left: 52px;
         position: fixed;
         color: whitesmoke;
         text-decoration: none;
+        text-shadow: 2px 2px black;
 }
 
-#nySide {
-        bottom: 15px;
-        right: 50px;
+#kontakt:hover {
+    background-color: aliceblue;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+    color: black;
+}
+
+#OmH {
+        top: 10px;
+        right: 40px;
+        position:absolute;
+        color:whitesmoke;
+        border-color: black;
+        text-shadow: 2px 1px black;
+        text-decoration: none;
+        font-family: sans-serif;
+}
+
+#Bachelor {
+        top: 58px;
+        right: 30px;
+        position:absolute;
+        color:whitesmoke;
+        border-color: black;
+        text-shadow: 2px 1px black;
+        text-decoration: none;
+        font-family: sans-serif;
+}
+
+#Master {
+        top: 100px;
+        right: 42px;
         position:fixed;
         color:whitesmoke;
         border-color: black;
+        text-shadow: 2px 1px black;
+        text-decoration: none;
+        font-family: sans-serif;
 }
 #Tilbake {
         top:10px;
@@ -94,4 +221,34 @@ body {
         position:fixed;
         color:whitesmoke;
 
+}
+
+#Vegg1 {
+        position: absolute;
+        top: 0px;
+        right: 160px;
+        height: 134px;
+        width: 3px;
+        background-color: black;
+        overflow: hidden;
+}
+
+#Vegg2 {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        height: 3px;
+        width: 145px;
+        background-color: black;
+        overflow: hidden;
+}
+
+#Vegg3 {
+        position: absolute;
+        top: 90px;
+        right: 15px;
+        height: 3px;
+        width: 145px;
+        background-color: black;
+        overflow: hidden;
 }
