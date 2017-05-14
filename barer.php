@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,51 +32,49 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
 <?php foreach ($barer as $bar) { ?>
 
-<div class="barThumbnail">
+
+<div id="BarThumbnail" class="barThumbnail" onclick="ShowModal('modal-<?= $bar["Id_Navn"]?>')">
         <img class="thumbnailImg" src="<?= $bar['Image_path'] ?>">
         <div class="thumbnailName">
             <p ><?= $bar['Id_Navn'] ?></p>
         </div>
 </div>
 
-<div class="modal">
+<div id="modal-<?=$bar["Id_Navn"];?>"class="modal">
     <div class="modalContent">
         <div class="barImg">
             <img  src="<?= $bar['Image_path'] ?>">
         </div>
-        <div class="close">&times;</div>
+        <div class="close" onclick="document.getElementById('modal-<?=$bar["Id_Navn"];?>').style.display='none'">&times;</div>
         <div class="barName">
             <p><?= $bar['Id_Navn'] ?></p>
         </div>
         <ul class="barInfo">
             <li>Adresse:<?= $bar['Adresse'] ?></li>
-            <li>Ølpris:<?= $bar['Pris'] ?></li>
+            <li>Ølpris:<?= $bar['Pris'] ?>kr</li>
             <li>ID:<?= $bar['Aldersgrense'] ?>år</li>
             <li>Åpningtider:<?= $bar['Aapningstider_Mandag'] ?></li>
         </ul>
     </div>
 </div>
+    
 <?php } ?>
 <script>
+      
     
-    var modal = document.getElementsByClassName("modal")[0];
-    var btn= document.getElementsByClassName("barThumbnail")[0];
-    var span = document.getElementsByClassName("close")[0];
-    
-    
-    
-    
-        btn.onclick = function() {
+      function ShowModal(id) {
+            var modal =document.getElementById(id);
             modal.style.display = "block";
-        }
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+          
+          
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
         }
+    
+        
     
         console.log(document.getElementsByClassName("modal"))
     
