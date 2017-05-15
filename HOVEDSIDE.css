@@ -1,6 +1,6 @@
 body {
     
-    background-color: darkslategray;
+    background-color: #2e2e1f;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size:cover;
@@ -20,11 +20,13 @@ body {
     top:0px;
     left:0px;
     font-size: 40px;
-    width: 1350px;
-    height: 130px;
+    width: 170px;
+    height: 120px;
     box-shadow: 7px 4px black;
     background-color: dimgray;
     border-bottom-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
@@ -39,10 +41,11 @@ body {
 
 #ACT {
     position: absolute;
-    left: 430px;
+    left: 565px;
     font-family: sans-serif;
     top: 65px;
     font-size: 25px;
+    text-shadow: 0px 1px white;
 }
 
 
@@ -57,7 +60,7 @@ body {
 
 #Campuser {
     position: absolute;
-    top: 0px;
+    top: -30px;
     left: 10px;
     font-size: 40px;
     color: antiquewhite;
@@ -65,15 +68,6 @@ body {
     text-shadow: 3px 2px black;
 }
 
-
-#Vegg4 {
-    position: absolute;
-    top: 130px;
-    left: 0px;
-    height: 504px;
-    width: 7px;
-    background-color: black;
-}
 
 
 
@@ -118,10 +112,10 @@ body {
     display:none;
     border-bottom-right-radius: 10px;
     box-shadow: 6px 6px black;
-    top: 120px;
+    top: -8px;
     left: -7px;
-    height: 500px;
-    width: 1349px;
+    height: 600px;
+    width: 1365px;
     object-fit: cover;
     overflow: hidden;
     position:relative;
@@ -145,8 +139,8 @@ body {
 }
 
 #logo {
-        top: 0px;
-        left: 40px;
+        top: 10px;
+        left: 35px;
         padding:0px;
         height: 100px;
         width: 100px;
@@ -170,7 +164,7 @@ body {
 #kontakt {
         top:105px;
         left: 52px;
-        position: fixed;
+        position: absolute;
         color: whitesmoke;
         text-decoration: none;
         text-shadow: 2px 2px black;
@@ -208,7 +202,7 @@ body {
 #Master {
         top: 100px;
         right: 42px;
-        position:fixed;
+        position:absolute;
         color:whitesmoke;
         border-color: black;
         text-shadow: 2px 1px black;
@@ -223,32 +217,49 @@ body {
 
 }
 
-#Vegg1 {
+#fooT {
+        position: absolute;
+        width: 1300px;
+        height: 70px;
+        bottom: -30px;
+}
+
+.FootLogo {
+        width: 70px;
+        height: 70px;
+        left: 10px;
         position: absolute;
         top: 0px;
-        right: 160px;
-        height: 134px;
-        width: 3px;
-        background-color: black;
-        overflow: hidden;
 }
 
-#Vegg2 {
+#telefon {
         position: absolute;
-        top: 45px;
-        right: 15px;
-        height: 3px;
-        width: 145px;
-        background-color: black;
-        overflow: hidden;
+        top: 0px;
+        left: 600px;
+        font-family: sans-serif;
 }
 
-#Vegg3 {
+#epost {
         position: absolute;
-        top: 90px;
-        right: 15px;
-        height: 3px;
-        width: 145px;
-        background-color: black;
-        overflow: hidden;
+        top: 28px;
+        left: 600px;
 }
+
+#facebook {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+}
+
+#twitter {
+            position: absolute;
+            right: 70px;
+            top: 10px;
+}
+
+#instagram {
+            position: absolute;
+            right: 120px;
+            top: 10px;
+}
+
