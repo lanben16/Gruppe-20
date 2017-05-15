@@ -115,8 +115,3 @@ function carousel() {
     <div class="fooT">
     <?php require 'footer.php' ?>
     </div>
-    
-    
-    
-</body>
-</html>
