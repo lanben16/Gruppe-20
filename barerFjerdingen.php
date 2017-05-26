@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link href="barerFjerdingen.css" rel="stylesheet" type="text/css">
+
+
+<link href="barer.css" rel="stylesheet" type="text/css">
+    
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
 <title>Barer Fjerdingen</title>
 
     <?php
@@ -33,6 +36,7 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     
     $barer[] = $row;
 }
+    
 ?>
 
 </head>
@@ -56,13 +60,8 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
      </div>
     
             <!--Php spørringer som lager barBilder-->
-           <div class="barBackground">
-            <?php foreach ($barer as $bar) { ?>
-
+           
             <?php require 'barOppsett.php'; ?>
-
-            <?php } ?>
-          </div>
     
     
     <!--JavaScript -->
@@ -98,21 +97,18 @@ function carousel() {
 }       
     
         
-    
-        console.log(document.getElementsByClassName("modal"))
-    
-        console.log(document.getElementsByClassName("barThumbnail"))
-        
        
     
 </script>
     
 </div>  
-    <a  href="index.html">
-     <img id="logo" src="westerdals-logo1.png">
+    <a  href="forside.php">
+     <img class="logo" src="westerdals-logo1.png">
     </a>
     
     <!--Php spørring for å hente in footer-->
     <div class="fooT">
     <?php require 'footer.php' ?>
     </div>
+</body>
+</html>
