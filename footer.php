@@ -19,7 +19,3 @@
     <p class="epost">Epost: post@westerdals.no</p>
     
     <img class="FootLogo" src="WACT_hovedlogo_farge_rgb.png">
-    
-                
-</body>
-</html>
