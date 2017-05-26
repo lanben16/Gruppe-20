@@ -6,7 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<link href="barerBrenneriveien.css" rel="stylesheet" type="text/css">
+    
+    
+<link href="barer.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
 <title>Barer Brenneriveien</title>
 
     <?php
@@ -54,14 +59,10 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         <h2 class="Menytekst">Barer ved Brenneriveien</h2>
      </div>
     
-            <!--Php spørringer som lager barBilder-->
-        <div class="barBackground">
-            <?php foreach ($barer as $bar) { ?>
-
+            <!--Php spørringer som lager barBilder-->          
             <?php require 'barOppsett.php'; ?>
-
-            <?php } ?>
-        </div>
+            
+        
  
   
     
@@ -98,20 +99,17 @@ function carousel() {
 }       
     
         
-    
-        console.log(document.getElementsByClassName("modal"))
-    
-        console.log(document.getElementsByClassName("barThumbnail"))
-        
        
     
 </script>
 </div>  
-    <a  href="index.html">
-     <img id="logo" src="westerdals-logo1.png">
+    <a  href="forside.php">
+     <img class="logo" src="westerdals-logo1.png">
     </a>
     
     <!--Php spørring for å hente in footer-->
     <div class="fooT">
     <?php require 'footer.php' ?>
     </div>
+</body>
+</html>
