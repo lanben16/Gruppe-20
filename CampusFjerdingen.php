@@ -8,6 +8,7 @@
     
 <link type=text/css rel=stylesheet href="main.css">
     
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 
 
@@ -16,16 +17,16 @@
 <body>
              
 <div class="container">
-    
+
 <div class="textbox">
 <h1>Campus Fjerdingen</h1>
 <p> Nær sentrum ligger Westerdals største campus. Her er det studenter fra ulike fagfelt. Både kunstfag, kommunikasjon, teknologi og ledelse holder til her. På Fjerdingen har vi både funksjonelle klasserom, studioer, spesialrom og øvingslokaler for musikkproduksjon, lys og lyddesign og programmering. </p> 
 <br>
-<p>Vi vet at studentlivet dreier seg om mer enn bare studier, og har selvfølgelig sørget for at bygget også er rustet for studentfester, utstillinger, konserter og andre typer arrangementer. Den aller nærmeste baren finner du på selve campus i første etasje: Sjenkestua. Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt her.
+<p>Vi vet at studentlivet dreier seg om mer enn bare studier, og har selvfølgelig sørget for at bygget også er rustet for studentfester, utstillinger, konserter og andre typer arrangementer. Den aller nærmeste baren finner du på selve campus i første etasje: Sjenkestua. Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p><a id="barFjerd" href="barerFjerdingen.php">her.</a>
 <br>
-</p>
     </div>
     </div>
+
 
     
 <div class="slideshow-container">
@@ -64,19 +65,17 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+
     
 <script> 
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -92,10 +91,37 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
 </script>
     
+    <div class="svartbox">
+    <p class="Campuser">Våre campuser:</p>
+
+    <div class="menyFjerdingen">
+    
+    <a id="Fjerdingen" href="CampusFjerdingen.php" style="color:gray;">Fjerdingen</a>
+    </div>
+    
+    <div class="menyVulkan">
+    <a id="Vulkan" href="CampusVulkan.php">Vulkan</a>  
+    </div>
+    
+    <div class="menyBrenneriveien">
+    <a id="Brenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
+        </div>
+</div>
+    
+<a  href="forside.php">
+     <img class="logo" src="westerdals-logo1.png">
+<p class="Hjem">Hjem</p>
+    </a>
+    
+<!--Php spørring for å hente in footer-->
+    <div class="fooT">
+    <?php require 'footer.php' ?>
+    </div>
+
+    
 </body>
+</html>
         
         
-            
