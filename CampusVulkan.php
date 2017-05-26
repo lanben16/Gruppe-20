@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-    <html>
-        <!DOCTYPE html>
-
+  
 <html>
 
 <head>
@@ -9,7 +7,8 @@
 <meta charset="utf-8"> 
     
 <link type=text/css rel=stylesheet href="main.css">
-    
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 
 
@@ -26,8 +25,8 @@
 <p>Campus Vulkan huser både studenter fra skuespillerlinjen og studenter ved film, TV og spill. </p> 
 
 <p>Studentene våre benytter seg av Kubaparken om sommeren, som ligger rett utenfor skolebygget vårt. På Grunerløkka er det mange små kafeer, restauranter og barer som tilbyr studentene mye kos og hygge, se full oversikt her. Bydelen er også et populært shoppingområde med mange ulike klesbutikker.
+Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p><a id="barVulk" href="barerVulkan.php">her.</a>
 
-</p>
     </div>
     </div>
 
@@ -68,7 +67,7 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-    
+
 <script> 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -94,6 +93,34 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+    
+    <div class="svartbox">
+    <p class="Campuser">Våre campuser:</p>
+
+    <div class="menyFjerdingen">
+    
+    <a id="Fjerdingen" href="CampusFjerdingen.php">Fjerdingen</a>
+    </div>
+        
+        <div class="menyVulkan">
+    <a id="Vulkan" href="CampusVulkan.php" style="color:gray;">Vulkan</a>  
+    </div>
+    
+    <div class="menyBrenneriveien">
+    <a id="Brenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
+        </div>
+</div>
+    
+    <a  href="forside.php">
+     <img class="logo" src="westerdals-logo1.png">
+    </a>
+    <p class="Hjem">Hjem</p>
+    
+    <!--Php spørring for å hente in footer-->
+    <div class="fooT">
+    <?php require 'footer.php' ?>
+    </div>
+
     
 </body>
     
