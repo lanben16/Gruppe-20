@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     
 <title>Westerdals</title>
@@ -31,26 +30,25 @@
    <img class="slideshow" src="N4A1603-800x600.jpg">
 </div>
     
-    
-    
-    
-    <div id="HjemMeny"> </div>
+    <div class="titleBakgrunn">
     <h2 id="Westerdals">WestStudent</h2>
     <p id="ACT">Nettside for studenter ved WOACT</p>
+    </div>
+    <div class="HjemMeny"> </div>
     <div id="CampusMeny">
-    <p id="Campuser">Se våre campuser!</p>
+    <p id="Campuser">Se våre <br> campuser!</p>
 
     <div class="menyFjerdingen">
     
-    <a id="Fjerdingen" href="barerFjerdingen.php">Fjerdingen</a>
+    <a id="Fjerdingen" href="CampusFjerdingen.php">Fjerdingen</a>
     </div>
     
     <div class="menyVulkan">
-    <a id="Vulkan" href="barerVulkan.php">Vulkan</a>  
+    <a id="Vulkan" href="CampusVulkan.php">Vulkan</a>  
     </div>
     
     <div class="menyBrenneriveien">
-    <a id="Brenneriveien" href="barerBrenneriveien.php">Brenneriveien</a>
+    <a id="Brenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
     </div>
         </div>
 
@@ -77,29 +75,13 @@ function carousel() {
 </script>
     
 <div>
-<img id="logo" src="westerdals-logo1.png">
+<img class="logo" src="westerdals-logo1.png">
     </div>
+<div id="strek"></div>
     
-<div id="fooT">
-            <div class="SocialWrap">
-                <a target="_blank" id="facebook" href="https://facebook.com/westerdalsosloact/">
-                <img alt="facebook" src="//login.create.net/images/icons/user/facebook_30x30.png"border=0></a>
-                
-                <a target="_blank" id="twitter" href="https://twitter.com/westerdalsact/">
-                <img alt="twitter" src="//login.create.net/images/icons/user/twitter-b_30x30.png"border=0>
-                </a>
-                
-                <a target="_blank" id="instagram" href="https://instagram.com/westerdalsact/">
-                <img alt="instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0>
-                </a>
-                
-    </div>
+<div class="fooT">
+ <?php require 'footer.php' ?>
     
-    <p id="telefon">Telefon: 22 05 75 50</p>
-    <p id="epost">Epost: post@westerdals.no</p>
-    
-    <img class="FootLogo" src="WACT_hovedlogo_farge_rgb.png">
-    
-                </div>
-        </body>
- </html>
+ </div>
+</body>
+</html>
