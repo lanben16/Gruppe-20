@@ -155,7 +155,7 @@ body { /* generel body style */
         position: absolute;
         width: 100%;
         height: 70px;
-        bottom: -60px;
+        bottom: -12px;
         background-color:  rgba(0,0,0,0.7);
 }
 
@@ -255,6 +255,17 @@ p {
     
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    
+    text-decoration: none;
+    color: white;
+    background-color:  rgba(0,0,0,0.7);
+    padding: 5px;
+}
+
 .textbox {
 width: 45%; 
 font-size; 30px;
@@ -263,35 +274,6 @@ margin-left: 2%;
 margin-top: 10%; 
     
 } 
-
-#barFjerd {
-    position: absolute;
-    font-size: 20px;
-    color: purple;
-    left: 400px;
-    bottom: 90px;
-    text-decoration: none;
-    
-}
-
-#barBrenn {
-    position: absolute;
-    font-size: 20px;
-    color: purple;
-    left: 80px;
-    bottom: 182px;
-    text-decoration: none;
-}
-
-#barVulk {
-    position: absolute;
-    font-size: 20px;
-    color: purple;
-    left: 250px;
-    bottom: 88px;
-    text-decoration: none;
-}
-
 
 
 * {box-sizing:border-box}
@@ -450,7 +432,7 @@ margin-top: 10%;
     top: 0px;
     left: 0px;
     height: 600px;
-    width: 1350px;
+    width: 100%;
     overflow: visible;
     object-fit: cover;
     position: absolute;
