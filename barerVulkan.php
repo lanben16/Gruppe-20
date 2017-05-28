@@ -90,7 +90,7 @@ function carousel() {
 </script>
 </div>  
     <!--Logo med link til forsiden-->
-    <a  href="forside.php">
+    <a  href="index.php">
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png"></a>
     <p class="Hjem">Hjem</p>
     
