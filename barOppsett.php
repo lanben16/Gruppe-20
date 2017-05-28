@@ -1,7 +1,7 @@
  <div class="barBackground">
-            <!--Php spørringer som lager barBilder-->
+            <!--Php spørringer som printer ut alle barene databasen har-->
             <?php foreach ($barer as $bar) { ?>
-
+<!--Thumbnail med barbilde og navn -->
  <div id="BarThumbnail" class="barThumbnail" onclick="ShowModal('modal-<?= $bar["Id_Navn"]?>')">
     
         <img class="thumbnailImg" src="<?= $bar['Image_path'] ?>">
@@ -27,7 +27,7 @@
         
         
      <?php {
-    
+    /* if else statments for å finne dag */
     $d=date("N"); // man (1) - sun (7)
     
     $apningstid = "";
@@ -55,12 +55,15 @@
     } ?>
         
         
-        
+        <!--Ul liste over barinfo -->
         <ul class="barInfo">
+            <li><?= $bar['Beskrivelse'] ?></li>
+            <br>
             <li>Adresse: <?= $bar['Adresse'] ?></li>
             <li>Ølpris: <?= $bar['Pris'] ?> kr</li>
             <li>ID: <?= $bar['Aldersgrense'] ?> år</li>
             <li>Åpningstid: <?= $apningstid ?></li>
+            <li>Avstand fra Campus: <?= $bar['Avstand'] ?> m</li>
             
             
         </ul>
