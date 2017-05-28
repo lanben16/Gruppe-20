@@ -36,8 +36,10 @@
 <p>Campus Vulkan huser både studenter fra skuespillerlinjen og studenter ved film, TV og spill. </p> 
 
 <p>Studentene våre benytter seg av Kubaparken om sommeren, som ligger rett utenfor skolebygget vårt. På Grunerløkka er det mange små kafeer, restauranter og barer som tilbyr studentene mye kos og hygge, se full oversikt her. Bydelen er også et populært shoppingområde med mange ulike klesbutikker.
-Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p><a id="barVulk" href="barerVulkan.php">her.</a>
-                   <!--Linker til tillhørende bar i slutten av setningnen -->
+Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p>
+    <!-- Knapp med link til oversikt over barer-->
+    <a href="barerVulkan.php" class="button">Klikke her for oversikt over barer i nærheten</a>
+    
     </div>
     </div>
     <!--Bilde container-->
@@ -86,7 +88,7 @@ Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversik
         </div>
 </div> 
     <!-- Logo med link til forsiden -->
-    <a  href="forside.php">
+    <a  href="index.php">
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
     </a>
     <p class="Hjem">Hjem</p> 
