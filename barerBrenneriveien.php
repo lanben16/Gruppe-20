@@ -8,22 +8,16 @@
 <meta name="author" content="">
     
     
-<link href="barer.css" rel="stylesheet" type="text/css">
-
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<!--Link til google font-->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     
 <title>Barer Brenneriveien</title>
 
     <?php
     
-    
-    require 'vendor/autoload.php';
-    
     require 'connect.php';
     
-    use Carbon\Carbon;
-    
-    Carbon::setLocale('no');
     
 
     
@@ -34,38 +28,38 @@ $barer = [];
     
     
 while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-    $row['Aapningstider_Mandag'] = new Carbon($row['Aapningstider_Mandag']);
-    
     $barer[] = $row;
 }
 ?>
 
 </head>
 <body>
-      <div class="bakgrunn">
-   <img class="slideshow" src="Westerdals.jpg">
+      <div>
+          
+        <!--Bakgrunn-->
+   <img class="barSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
-   <img class="slideshow" src="12992738_10156864448095085_469207469_n-960x720.jpg">
+   <img class="barSlideshow" src="Bilder/Slideshow/Fasade-fra-gaten.jpg">
     
-   <img class="slideshow" src="Fasade-fra-gaten.jpg">
+   <img class="barSlideshow" src="Bilder/Slideshow/Brenneriveien-9-4.jpg">
     
-   <img class="slideshow" src="N4A1603-800x600.jpg">
-</div>
+   <img class="barSlideshow" src="Bilder/Slideshow/N4A2428-800x600.jpg">
 
-<div class="background"> 
+
+
     
-     <div class="HjemMeny">
+     <div class="HeadBakgrunn">
         <h2 class="Menytekst">Barer ved Brenneriveien</h2>
      </div>
     
-            <!--Php spørringer som lager barBilder-->          
+            <!--Php spørringer som lager barBilder-->
             <?php require 'barOppsett.php'; ?>
-            
+          
         
  
   
-    
+    </div>  
     <!--JavaScript -->
 <script>
     
@@ -74,7 +68,7 @@ carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("slideshow");
+    var x = document.getElementsByClassName("barSlideshow");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }
@@ -102,10 +96,12 @@ function carousel() {
        
     
 </script>
-</div>  
+    
+    <!--Hjemknapp-->
     <a  href="forside.php">
-     <img class="logo" src="westerdals-logo1.png">
+     <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
     </a>
+    <p class="Hjem">Hjem</p>
     
     <!--Php spørring for å hente in footer-->
     <div class="fooT">
