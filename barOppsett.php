@@ -32,10 +32,7 @@
     
     $apningstid = "";
     
-   if ($d == 0)
-        $apningstid = $bar['Aapningstider_Sondag'] ." - " .$bar['Stengetider_Sondag'];
-    
-    else if ($d == 1)
+    if ($d == 1)
         $apningstid = $bar['Aapningstider_Mandag'] ." - " .$bar['Stengetider_Mandag'];
     
     else if ($d == 2)
@@ -52,6 +49,9 @@
     
     else if ($d == 6)
         $apningstid = $bar['Aapningstider_Lordag'] ." - " .$bar['Stengetider_Lordag'];
+    
+    else if ($d == 7)
+        $apningstid = $bar['Aapningstider_Sondag'] ." - " .$bar['Stengetider_Sondag'];
     } ?>
         
         
