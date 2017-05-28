@@ -1,0 +1,638 @@
+*{ /* font for all tekst */
+    font-family: 'Lato';
+}
+
+body { /* generel body style */
+    
+    background-color: #2e2e1f;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+} 
+
+
+/* Forside css */
+.HjemMeny { /* Selve menyen på forsiden */
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 130px;
+    height: 472px;
+    background-color:  rgba(0,0,0,0.7);
+}
+
+.titleBakgrunn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    background-color:  rgba(0,0,0,0.7);
+}
+
+.titleBakgrunn h2 {
+    font-size: 70px;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.titleBakgrunn p {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
+    color: antiquewhite;
+}
+
+
+
+#CampusMeny { /* Meny over campuser */
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    height: 500px;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+}
+
+#Campuser {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    font-size: 25px;
+    color: antiquewhite;
+    
+}
+
+
+
+
+#CampFjerdingen {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    
+    
+}
+
+#CampVulkan {
+    position: absolute;
+    top: 230px;
+    left:5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+   
+    
+}
+
+#CampBrenneriveien {
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    
+    
+}
+
+
+.slideshow { /*Bildene som skiftes automatisk i bakgrunn */
+    display:none;
+    top: -8px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    opacity: 1;
+    animation-name: imgFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    
+}
+
+.grid {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    color: black;
+}
+     /* For å gjøre merkant hva som kan trykkes */
+ #CampFjerdingen:hover, #CampVulkan:hover, #CampBrenneriveien:hover {
+    
+    text-shadow: 7px 7px gray;
+}
+
+
+.logo { /*Standar logo og "HJEM" knapp */
+        top: 3px;
+        left: 15px;
+        padding:0px;
+        height: 100px;
+        width: 100px;
+        box-shadow: 2px 2px black;
+        border-radius: 100px;
+        position: absolute;
+}
+
+
+
+.fooT { /* Standar footer på alle sidene */
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        bottom: -60px;
+        background-color:  rgba(0,0,0,0.7);
+}
+
+.FootLogo {
+        width: 70px;
+        height: 70px;
+        left: 10px;
+        position: absolute;
+        bottom: 0px;
+}
+
+.telefon, .epost {
+    color: dimgray;
+}
+
+.telefon {
+        text-align: center;
+        margin-bottom: 0;
+}
+
+.epost {
+        text-align: center;
+        margin-top: 0;
+}
+
+.facebook {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+}
+
+.twitter {
+            position: absolute;
+            right: 70px;
+            top: 10px;
+}
+
+.instagram {
+            position: absolute;
+            right: 120px;
+            top: 10px;
+}
+
+/* Campussider css */
+
+.container {
+position: absolute;
+height: 80%; 
+width: 80%;   
+bottom: 70px;
+right: 0%;
+background-color: gray; 
+
+}
+
+.CampusBakgrunn {
+    color: black;
+    border-radius: 10px;
+    height: 645px;
+    width: 100%;
+    top: 0px;
+    position: relative;
+}
+
+.CampusSlideshow {
+    display:none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    overflow: visible;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(4px); /* Lager blur på bildebakgrunn */
+    transition: opacity 1s ease-in-out;
+    
+}
+
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 14px;
+    word-wrap: break-word; 
+    text-align: left; 
+    line-height: 20px; 
+  
+
+    
+}
+
+.textbox {
+width: 45%; 
+font-size; 30px;
+text-align:justify; 
+margin-left: 2%; 
+margin-top: 10%; 
+    
+} 
+
+#barFjerd {
+    position: absolute;
+    font-size: 20px;
+    color: purple;
+    left: 400px;
+    bottom: 90px;
+    text-decoration: none;
+    
+}
+
+#barBrenn {
+    position: absolute;
+    font-size: 20px;
+    color: purple;
+    left: 80px;
+    bottom: 182px;
+    text-decoration: none;
+}
+
+#barVulk {
+    position: absolute;
+    font-size: 20px;
+    color: purple;
+    left: 250px;
+    bottom: 88px;
+    text-decoration: none;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 450px;
+  position: relative;
+  margin: auto;
+  left: 400px; 
+  bottom: 490px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  
+}
+
+
+
+.Hjem {
+    position: absolute;
+    top: 87px;
+    left: 50px;
+    color: antiquewhite;
+}
+
+.Campuser {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+
+#Fjerdingen {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    
+    
+}
+
+#Vulkan {
+    position: absolute;
+    top: 230px;
+    left:5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+   
+    
+}
+
+#Brenneriveien {
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    
+    
+}
+
+
+.svartbox { /*CampusMenyer */
+    position: absolute;
+    top: 170px;
+    width: 250px;
+    height: 400px;
+    background-color: black;
+}
+
+.barertekst {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    color: white;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Posisjonerer  "next button" til høyre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Legger til en farge når man hovrer */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Hoved text */
+.text {
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Barer css */
+
+
+.barSlideshow {
+    display:none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 6px 6px black;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 1350px;
+    overflow: visible;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(4px); /* legger til blur på bildebakgrunn*/
+    transition: opacity 1s ease-in-out;
+    
+}
+
+
+.barBackground {
+    position: relative; 
+    top: 150px;
+    height: 430px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    
+}
+
+  /* Styling av scrollbar */
+.barBackground::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.barBackground::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.barBackground::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #555;
+}
+
+
+.HeadBakgrunn {
+    position: absolute;
+    top:0px;
+    left:0px;
+    font-size: 40px;
+    width: 1350px;
+    height: 120px;
+    background-color:  rgba(0,0,0,0.7);
+    
+}
+
+
+.Menytekst {
+    position: absolute;
+    left: 420px;
+    top: -40px;
+    font-size: 70px;
+    color: white;
+}
+
+ /* Css styling av selve baroppsette */
+.barThumbnail {
+    height:200px;
+    width:300px;
+    background-color: dimgrey;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5%; 
+    overflow: hidden;
+    display: inline-block; 
+    margin:5px 10px;
+}
+
+.thumbnailImg {
+    width: 100%;
+    height: 200px;  
+}
+
+.thumbnailName {
+    position: absolute;
+    width:100%;
+    height: 50px;
+    bottom:0px;
+    margin: 0px;
+    background-color:  rgba(0,0,0,0.7);
+}
+
+
+.thumbnailName p {
+    font-size: 1.5em;
+    font-weight:bold;
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+    margin-top:5px;
+    margin-left:10px;    
+}
+
+.modal{
+    display:none;
+    position:absolute;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+      
+}
+
+.modalContent {
+    position:relative;
+    background-color: #fefefe;
+    margin:auto;
+    border: 1px solid #888;
+    width:500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.barImg{
+    position: relative;
+    height:200px;
+    overflow: hidden;    
+}
+
+.barImg img{
+    width:100%;
+}
+
+.barName {
+    background-color:dimgray;
+    height:50px;
+    top:0px;
+    
+}
+
+.barName p {
+    margin-top: 0;
+    margin-left:20px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-weight:bold;
+    font-size: 2em;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    color:white;
+}
+
+.barInfo{
+    list-style-type:none;
+    font-weight: bold; 
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+
+.close{
+    position: absolute;
+    top:20px;
+    right:20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight:bold;
+    padding 20px;
+}
+
+.close:hover, .close:focus{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+   /* Animasjoner */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
