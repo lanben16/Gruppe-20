@@ -32,7 +32,10 @@
 <h1>Campus Brenneriveien</h1>
 <p> Langs Akerselva, ikke langt unna Vulkan finner du vårt minste Campus. Her holder maske- og hårdesign til, og deler av Avdeling for film, TV og spill. Her er det både green screen-rom, klipperom, grov – og finverksted. Om dagen kryr det av kunstneriske sjeler, og om kvelden er det et yrende natteliv.</p>
     
-<p>Dette er nok campus som er nærmest uteliv og barer (selv om veien er kort uansett hvor du er) med Blå og Ingensteds som nærmeste naboer. Se full oversikt</p><a id="barBrenn" href="barerBrenneriveien.php">her.</a>
+<p>Dette er nok campus som er nærmest uteliv og barer (selv om veien er kort uansett hvor du er) med Blå og Ingensteds som nærmeste naboer. Se full oversikt</p>
+    
+   <!-- Knapp med link til oversikt over barer-->
+<a href="barerBrenneriveien.php" class="button">Klikke her for oversikt over barer i nærheten</a>
 
 
     </div>
@@ -127,7 +130,7 @@ function showSlides(n) {
         </div> <!-- Siden som brukeren er inne på blir markert med grå skrift -->
 </div>
     <!--Logo med link tilbake til forsiden -->
-<a  href="forside.php">
+<a  href="index.php">
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
     </a>
     <p class="Hjem">Hjem</p>
