@@ -6,8 +6,8 @@
     
 <meta charset="utf-8"> 
     
-<link type=text/css rel=stylesheet href="main.css">
-
+<link type=text/css rel=stylesheet href="stylesheet.css">
+<!--Link til googlefont 'Lato'-->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 
@@ -15,7 +15,18 @@
 </head>
     
 <body>
-             
+    <!--Bildebakgrunn med blur-->
+   <div class="CampusBakgrunn">
+   <img class="CampusSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
+    
+    
+   <img class="CampusSlideshow" src="Bilder/Slideshow/Fasade-fra-gaten.jpg">
+    
+   <img class="CampusSlideshow" src="Bilder/Slideshow/Brenneriveien-9-4.jpg">
+    
+   <img class="CampusSlideshow" src="Bilder/Slideshow/N4A2428-800x600.jpg">
+</div>  
+         <!--Lager en container for teksten-->    
 <div class="container">
     
 <div class="textbox">
@@ -26,33 +37,28 @@
 
 <p>Studentene våre benytter seg av Kubaparken om sommeren, som ligger rett utenfor skolebygget vårt. På Grunerløkka er det mange små kafeer, restauranter og barer som tilbyr studentene mye kos og hygge, se full oversikt her. Bydelen er også et populært shoppingområde med mange ulike klesbutikker.
 Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p><a id="barVulk" href="barerVulkan.php">her.</a>
-
+                   <!--Linker til tillhørende bar i slutten av setningnen -->
     </div>
     </div>
-
-    
+    <!--Bilde container-->
 <div class="slideshow-container">
 <div class="mySlides fade">
-<div class="numbertext">1 / 4</div>
-<img src="Bilder/westerdals_bygning_01-1.jpg" style="width:100%">
+<img src="Bilder/Vulkan/bachelorutstilling_2-800x600.jpg" style="width:100%">
 <div class="text">Vulkan</div>
 </div>
 
 <div class="mySlides fade">
-<div class="numbertext">2 / 4</div>
-<img src="Bilder/bachelorutstilling_2-800x600.jpg" style="width:100%">
+<img src="Bilder/Vulkan/HG_Bachelorutstilling02-1-800x600.jpg" style="width:100%">
 <div class="text">Fellesområde</div>
 </div>
 
   <div class="mySlides fade">
- <div class="numbertext">3 / 4</div>
-    <img src="Bilder/HG_Bachelorutstilling02-1-800x600.jpg" style="width:100%">
+    <img src="Bilder/Vulkan/westerdals_bygning_01-1.jpg" style="width:100%">
     <div class="text">Kantine</div>
   </div>
 
 <div class="mySlides fade">
- <div class="numbertext">4 / 4</div>
-    <img src="Bilder/A%CC%8ApenDag_Vulkan_2016_7-800x600.jpg" style="width:100%">
+    <img src="Bilder/Vulkan/%C3%85penDag_Vulkan_2016_7-800x600.jpg" style="width:100%">
     <div class="text">Møterom</div>
   </div>
 
@@ -62,13 +68,49 @@ Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversik
 </div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+    <!-- Meny over campuser -->
+    <div class="svartbox">
+    <p class="Campuser">Våre campuser:</p>
 
+    <div class="menyFjerdingen">
+    
+    <a id="Fjerdingen" href="CampusFjerdingen.php">Fjerdingen</a>
+    </div>
+        
+        <div class="menyVulkan">
+    <a id="Vulkan" href="CampusVulkan.php" style="color:gray;">Vulkan</a>  
+    </div> <!-- Siden som brukeren er inne på blir markert med grå skrift -->
+    
+    <div class="menyBrenneriveien">
+    <a id="Brenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
+        </div>
+</div> 
+    <!-- Logo med link til forsiden -->
+    <a  href="forside.php">
+     <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
+    </a>
+    <p class="Hjem">Hjem</p> 
+
+    <!-- JavaScript-->
 <script> 
+    //Javascript til bildebakgrunn
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("CampusSlideshow");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    
+    slideIndex++;
+    
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Bilde byttes hvert 3 sekund
+}  
+    //Javascipt til campusbildene
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -94,35 +136,11 @@ function showSlides(n) {
 }
 </script>
     
-    <div class="svartbox">
-    <p class="Campuser">Våre campuser:</p>
-
-    <div class="menyFjerdingen">
-    
-    <a id="Fjerdingen" href="CampusFjerdingen.php">Fjerdingen</a>
-    </div>
-        
-        <div class="menyVulkan">
-    <a id="Vulkan" href="CampusVulkan.php" style="color:gray;">Vulkan</a>  
-    </div>
-    
-    <div class="menyBrenneriveien">
-    <a id="Brenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
-        </div>
-</div>
-    
-    <a  href="forside.php">
-     <img class="logo" src="westerdals-logo1.png">
-    </a>
-    <p class="Hjem">Hjem</p>
-    
-    <!--Php spørring for å hente in footer-->
+<!--Php spørring for å hente in footer-->
     <div class="fooT">
     <?php require 'footer.php' ?>
     </div>
-
     
 </body>
-    
     </html>
             
