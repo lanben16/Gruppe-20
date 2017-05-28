@@ -6,34 +6,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link href="barer.css" rel="stylesheet" type="text/css">
-    
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <!--Link til googlefont 'Lato'-->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     
 <title>Barer Fjerdingen</title>
 
     <?php
-    
-    
-    require 'vendor/autoload.php';
-    
+    /* Kobler til databasen */
     require 'connect.php';
     
-    use Carbon\Carbon;
-    
-    Carbon::setLocale('no');
-    
 
-    
+    /* Henter ut spørringer fra barerFjerd databasen */
 $statement = $connection->prepare('SELECT * FROM barerFjerd');
     
 $statement->execute();
 $barer = [];
     
     
-while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-    $row['Aapningstider_Mandag'] = new Carbon($row['Aapningstider_Mandag']);
-    
+while($row = $statement->fetch(PDO::FETCH_ASSOC)) {    
     $barer[] = $row;
 }
     
@@ -41,21 +32,19 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
 </head>
 <body>
+    <!--Bildebakgrun med blur-->
+   <img class="barSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
-     <div class="bakgrunn">
-   <img class="slideshow" src="Westerdals.jpg">
     
+   <img class="barSlideshow" src="Bilder/Slideshow/Fasade-fra-gaten.jpg">
     
-   <img class="slideshow" src="12992738_10156864448095085_469207469_n-960x720.jpg">
+   <img class="barSlideshow" src="Bilder/Slideshow/Brenneriveien-9-4.jpg">
     
-   <img class="slideshow" src="Fasade-fra-gaten.jpg">
-    
-   <img class="slideshow" src="N4A1603-800x600.jpg">
-</div>
+   <img class="barSlideshow" src="Bilder/Slideshow/N4A2428-800x600.jpg">
     
 <div class="background"> 
     
-     <div class="HjemMeny">
+     <div class="HeadBakgrunn">  
         <h2 class="Menytekst">Barer ved Fjerdingen</h2>
      </div>
     
@@ -66,13 +55,13 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
     
     <!--JavaScript -->
 <script>
-    
+    //Javascript for bildebakgrunn
     var slideIndex = 0;
 carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("slideshow");
+    var x = document.getElementsByClassName("barSlideshow");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }
@@ -81,9 +70,9 @@ function carousel() {
     
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 3000); // Change image every 3 seconds
+    setTimeout(carousel, 3000); // Bytter bilde hvert 3 sekund
 }  
-      
+      //Javascript for bar pop-up
       function ShowModal(id) {
             var modal =document.getElementById(id);
             modal.style.display = "block";
@@ -103,8 +92,9 @@ function carousel() {
     
 </div>  
     <a  href="forside.php">
-     <img class="logo" src="westerdals-logo1.png">
+     <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
     </a>
+    <p class="Hjem">Hjem</p>
     
     <!--Php spørring for å hente in footer-->
     <div class="fooT">
