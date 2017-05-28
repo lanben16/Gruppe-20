@@ -33,9 +33,12 @@
 <h1>Campus Fjerdingen</h1>
 <p> Nær sentrum ligger Westerdals største campus. Her er det studenter fra ulike fagfelt. Både kunstfag, kommunikasjon, teknologi og ledelse holder til her. På Fjerdingen har vi både funksjonelle klasserom, studioer, spesialrom og øvingslokaler for musikkproduksjon, lys og lyddesign og programmering. </p> 
 <br>
-<p>Vi vet at studentlivet dreier seg om mer enn bare studier, og har selvfølgelig sørget for at bygget også er rustet for studentfester, utstillinger, konserter og andre typer arrangementer. Den aller nærmeste baren finner du på selve campus i første etasje: Sjenkestua. Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt</p><a id="barFjerd" href="barerFjerdingen.php">her.</a>
-    <!--Link til tillhørende bar i slutten av setningen -->
+<p>Vi vet at studentlivet dreier seg om mer enn bare studier, og har selvfølgelig sørget for at bygget også er rustet for studentfester, utstillinger, konserter og andre typer arrangementer. Den aller nærmeste baren finner du på selve campus i første etasje: Sjenkestua. Det er også  i nærheten av noen av byens beste barer. Vi har samlet en oversikt over priser, aldersgrenser, og andre ting som kan være greit å vite om barer i nærheten. Se full oversikt her.</p>
+    
 <br>
+    <!-- Knapp med link til oversikt over barer-->
+<a href="barerFjerdingen.php" class="button">Klikke her for oversikt over barer i nærheten</a>
+    
     </div>
     </div>
 
@@ -130,7 +133,7 @@ function showSlides(n) {
         </div>
 </div>
     <!--Logo med link tilbake til forsiden-->
-<a  href="forside.php">
+<a  href="index.php">
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
 <p class="Hjem">Hjem</p>
     </a>
