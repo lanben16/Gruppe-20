@@ -20,6 +20,7 @@
 
 
 <!--Bildebakgrunn-->
+    <div id="Ramme">
    <img class="slideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
@@ -53,6 +54,7 @@
     <a id="CampBrenneriveien" href="CampusBrenneriveien.php">Brenneriveien</a>
     </div>
         </div>
+    
 
     
     <!-- Javascript-->
@@ -79,6 +81,7 @@ function carousel() {
     <!--Logo i topp høyre hjørnet-->
 <div>
 <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
+    </div>
     </div>
     
     <!--Footer-->
