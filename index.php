@@ -20,7 +20,7 @@
 
 
 <!--Bildebakgrunn-->
-    <div id="Ramme">
+    <div class="Ramme">
    <img class="slideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
