@@ -34,9 +34,10 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
 </head>
 <body>
-      <div>
+      <div class="Ramme">
           
         <!--Bakgrunn-->
+          
    <img class="barSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
@@ -59,7 +60,7 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         
  
   
-    </div>  
+    
     <!--JavaScript -->
 <script>
     
@@ -102,6 +103,7 @@ function carousel() {
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
     </a>
     <p class="Hjem">Hjem</p>
+    </div>
     
     <!--Php spørring for å hente in footer-->
     <div class="fooT">
