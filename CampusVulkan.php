@@ -15,8 +15,8 @@
 </head>
     
 <body>
+    <div class="RammeCampus">
     <!--Bildebakgrunn med blur-->
-   <div class="CampusBakgrunn">
    <img class="CampusSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
@@ -25,7 +25,7 @@
    <img class="CampusSlideshow" src="Bilder/Slideshow/Brenneriveien-9-4.jpg">
     
    <img class="CampusSlideshow" src="Bilder/Slideshow/N4A2428-800x600.jpg">
-</div>  
+ 
          <!--Lager en container for teksten-->    
 <div class="container">
     
@@ -137,6 +137,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+    </div>
     
 <!--Php spørring for å hente in footer-->
     <div class="fooT">
