@@ -60,15 +60,7 @@ body { /* generel body style */
     height: 90vh;
 }
 
-.RammeCampus {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-}
+
 
 
 #CampusMeny { /* Meny over campuser */
@@ -222,6 +214,16 @@ body { /* generel body style */
 
 /* Campussider css */
 
+.RammeCampus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+}
+
 .container {
 position: absolute;
 height: 80%; 
@@ -268,15 +270,15 @@ p {
     
 }
 
-a.button {
+a.button { /* Knapp for oversikt over barer */
     -webkit-appearance: button;
     -moz-appearance: button;
-    appearance: button;
-    
+    appearance: button; 
     text-decoration: none;
     color: white;
     background-color:  rgba(0,0,0,0.7);
     padding: 5px;
+    
 }
 
 .textbox {
