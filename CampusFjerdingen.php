@@ -15,8 +15,9 @@
 </head>
     
 <body>
+    <div class="RammeCampus">
     <!--Bildebakgrunn med blur-->
-<div class="CampusBakgrunn">
+
       <img class="CampusSlideshow" src="Bilder/Slideshow/Westerdals.jpg">
     
     
@@ -25,7 +26,7 @@
    <img class="CampusSlideshow" src="Bilder/Slideshow/Brenneriveien-9-4.jpg">
     
    <img class="CampusSlideshow" src="Bilder/Slideshow/N4A2428-800x600.jpg">
-</div>  
+
              <!--Container til teksten -->
 <div class="container">
 
@@ -137,11 +138,13 @@ function showSlides(n) {
      <img class="logo" src="Bilder/Logoer/westerdals-logo1.png">
 <p class="Hjem">Hjem</p>
     </a>
+    </div>
     
 <!--Php spørring for å hente in footer-->
     <div class="fooT">
     <?php require 'footer.php' ?>
     </div>
+    
 
     
 </body>
