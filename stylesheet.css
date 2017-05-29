@@ -18,10 +18,10 @@ body { /* generel body style */
 /* Forside css */
 .HjemMeny { /* Selve menyen på forsiden */
     position: absolute;
-    top: 120px;
+    top: 0px;
     left: 0px;
     width: 130px;
-    height: 472px;
+    height: 100%;
     background-color:  rgba(0,0,0,0.7);
 }
 
@@ -50,13 +50,23 @@ body { /* generel body style */
     color: antiquewhite;
 }
 
+#Ramme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+}
+
 
 
 #CampusMeny { /* Meny over campuser */
     position: absolute;
-    top: 130px;
+    top: 127px;
     left: 0px;
-    height: 500px;
+    height: 70%;
     width: 200px;
     border-bottom-left-radius: 10px;
 }
@@ -111,7 +121,7 @@ body { /* generel body style */
     display:none;
     top: -8px;
     left: 0px;
-    height: 600px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -154,8 +164,10 @@ body { /* generel body style */
 .fooT { /* Standar footer på alle sidene */
         position: absolute;
         width: 100%;
-        height: 70px;
-        bottom: -12px;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+        bottom: 0;
         background-color:  rgba(0,0,0,0.7);
 }
 
@@ -478,7 +490,7 @@ margin-top: 10%;
     top:0px;
     left:0px;
     font-size: 40px;
-    width: 1350px;
+    width: 100%;
     height: 120px;
     background-color:  rgba(0,0,0,0.7);
     
